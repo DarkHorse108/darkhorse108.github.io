@@ -1,4 +1,11 @@
 
+window.addEventListener("load", function(){
+	document.querySelector(".preloader").classList.add("opacity-0");
+	setTimeout(function() {
+	document.querySelector(".preloader").style.display="none";
+	}, 1000)
+})
+
 
 const nav = document.querySelector("#nav");
 var navList = nav.querySelectorAll("li");
@@ -28,6 +35,10 @@ for(let i = 0; i < totalNavList; i++)
 
 		this.classList.add("active");
 		showSection(this); 
+
+		if(window.innerWidth < 1200){
+			asideSectionTogglerBtn();
+		}
 	});
 	
 }
@@ -39,4 +50,19 @@ function showSection(element){
 	const target = element.getAttribute("href").split("#")[1];
 	document.querySelector("#" + target).classList.add("active");
 
+}
+
+const navTogglerBtn = document.querySelector(".nav-toggler");
+var aside = document.querySelector(".aside");
+
+navTogglerBtn.addEventListener("click", function(){
+	asideSectionTogglerBtn();
+});
+
+function asideSectionTogglerBtn(){
+	aside.classList.toggle("open");
+	navTogglerBtn.classList.toggle("open");
+		for(let i = 0; i < totalSection; i++ ){
+		allSection[i].classList.toggle("open");
+	}
 }
