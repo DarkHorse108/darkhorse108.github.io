@@ -179,8 +179,7 @@ input, textarea, select{
 	
 }
 .preloader{
-    background-image: url('../img/Background.jpg');
-    background-size: cover;
+background-color: #0f1e25;
 	position: fixed;
 	left: 0;
 	top: 0;
