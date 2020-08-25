@@ -770,6 +770,9 @@ input, textarea, select{
 }
 
 @media (max-width: 1199px){
+	.yelp-review{
+		overflow: scroll;
+	}
 	.section.container{
 		padding-top: 70px;
 	}
@@ -802,7 +805,9 @@ input, textarea, select{
 	}
 }
 @media (max-width: 991px){
-
+		.yelp-review{
+		overflow: scroll;
+	}
 	.home .intro h1{
 		font-size: 30px;
 
@@ -815,7 +820,9 @@ input, textarea, select{
 	}
 }
 @media (max-width: 767px){
-
+		.yelp-review{
+		overflow: scroll;
+	}
 	.about .employment-info,
 	.about .education-info,
 	.about .skills-info .info-item{
