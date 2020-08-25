@@ -193,8 +193,8 @@ input, textarea, select{
 	align-items: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-transition: all 1.5s ease;
-	transition: all 1.5s ease;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
 
 }
 
