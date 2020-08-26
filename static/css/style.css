@@ -829,6 +829,7 @@ background-color: #0f1e25;
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
 		max-width: 100%;
+		overflow-x: scroll;
 	}
 	.projects .project-item{
 		-ms-flex: 0 0 100%;
